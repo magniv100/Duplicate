@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="check schema done just need exeptions">
+    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="login done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/schema/schema_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema/schema_management.py" afterDir="false" />
     </list>
@@ -52,6 +52,7 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;schema&quot;,
@@ -59,6 +60,11 @@
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\origa\Documents\pro\Duplicate\src\schema" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -106,7 +112,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1773156081132</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="login done">
+      <option name="closed" value="true" />
+      <created>1773217710749</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1773217710749</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,7 +139,8 @@
     <MESSAGE value="dev start ready" />
     <MESSAGE value="new branch schema" />
     <MESSAGE value="check schema done just need exeptions" />
-    <option name="LAST_COMMIT_MESSAGE" value="check schema done just need exeptions" />
+    <MESSAGE value="login done" />
+    <option name="LAST_COMMIT_MESSAGE" value="login done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
