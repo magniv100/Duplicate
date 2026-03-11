@@ -1,7 +1,7 @@
 import pika
 import logging
 
-def send_message(message):
+def rabbit_mq_writer(message):
 
     connection = pika.BlockingConnection(
         pika.ConnectionParameters(host='localhost'))
