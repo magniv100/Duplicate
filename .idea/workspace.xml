@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="new branch schema">
-      <change afterPath="$PROJECT_DIR$/src/schema/schema_management.py" afterDir="false" />
+    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="check schema done just need exeptions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schema/schema_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema/schema_management.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1773151056371</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎-00004" summary="check schema done just need exeptions">
+      <option name="closed" value="true" />
+      <created>1773156081132</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1773156081132</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +124,8 @@
     <MESSAGE value="start" />
     <MESSAGE value="dev start ready" />
     <MESSAGE value="new branch schema" />
-    <option name="LAST_COMMIT_MESSAGE" value="new branch schema" />
+    <MESSAGE value="check schema done just need exeptions" />
+    <option name="LAST_COMMIT_MESSAGE" value="check schema done just need exeptions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
