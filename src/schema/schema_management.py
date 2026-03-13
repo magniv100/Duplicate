@@ -1,11 +1,12 @@
 import http, logging
+from http.client import HTTPException
 
 
 def check_object_details(metadata: dict) -> bool | http.HTTPStatus:
     logging.debug(f"start checking if object details isnt null( {metadata}")
     for value in metadata["object_details"]:
         if value is None:
-            return http.HTTPStatus.UNPROCESSABLE_CONTENT
+            raise HTTPException(http.HTTPStatus.UNPROCESSABLE_CONTENT,"object_details null")
     logging.debug(f"Object details pass: {metadata}")
     return True
 
@@ -14,7 +15,7 @@ def check_digital_capture(metadata: dict) -> bool | http.HTTPStatus:
     logging.debug(f"start checking if digital capture isnt null( {metadata}")
     for value in metadata["digital_capture"]:
         if value is None:
-            return http.HTTPStatus.UNPROCESSABLE_CONTENT
+            raise HTTPException(http.HTTPStatus.UNPROCESSABLE_CONTENT,"digital_capture null")
     logging.debug(f"Digital capture pass: {metadata}")
     return True
 
@@ -25,7 +26,7 @@ def check_place(metadata: dict) -> bool | http.HTTPStatus:
     place = keys[3]
     for value in metadata[place]:
         if value is None:
-            return http.HTTPStatus.UNPROCESSABLE_CONTENT
+            raise HTTPException(http.HTTPStatus.UNPROCESSABLE_CONTENT,"place null")
     logging.debug(f"Place pass: {metadata}")
     return True
 
@@ -37,9 +38,9 @@ def check_all_exist(metadata: dict) -> bool | http.HTTPStatus:
         if check_object_details(metadata) and check_digital_capture(metadata) and check_place(metadata):
             return True
         else:
-            return http.HTTPStatus.UNPROCESSABLE_CONTENT
+            raise HTTPException(http.HTTPStatus.UNPROCESSABLE_CONTENT,"asset_id or asset_type null")
     else:
-        return http.HTTPStatus.UNPROCESSABLE_CONTENT
+        raise HTTPException(http.HTTPStatus.UNPROCESSABLE_CONTENT,"asset_id null")
 
 
 def validation(metadata: dict) -> dict | http.HTTPStatus:
@@ -47,5 +48,5 @@ def validation(metadata: dict) -> dict | http.HTTPStatus:
     if check_all_exist(metadata):
         logging.debug(f"validation pass {metadata}")
         return metadata
-    return http.HTTPStatus.UNPROCESSABLE_CONTENT
+    raise HTTPException(http.HTTPStatus.UNPROCESSABLE_CONTENT,"validation failed")
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="login done">
+    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="login updated and naming change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/schema/schema_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/schema/schema_management.py" afterDir="false" />
     </list>
@@ -120,7 +120,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1773217710749</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL‎-00006" summary="login updated and naming change">
+      <option name="closed" value="true" />
+      <created>1773219957720</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1773219957720</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,7 +148,8 @@
     <MESSAGE value="new branch schema" />
     <MESSAGE value="check schema done just need exeptions" />
     <MESSAGE value="login done" />
-    <option name="LAST_COMMIT_MESSAGE" value="login done" />
+    <MESSAGE value="login updated and naming change" />
+    <option name="LAST_COMMIT_MESSAGE" value="login updated and naming change" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
