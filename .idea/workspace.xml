@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="start">
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="statr, created req.txt and test.py">
+      <change afterPath="$PROJECT_DIR$/src/s3/req_nivi.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s3/s3_connect_dupe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s3/sample.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s3/slime.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,21 +28,21 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "magniv100"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;magniv100&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/magniv100/Duplicate.git",
-    "accountId": "033f2d98-1074-4624-84aa-eb1bc30bffbe"
+    "accountId": "ace9850d-1e68-47f5-8e8e-f179c83b19c7"
   }
 }]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="3Akw3tw5dBvtBvxLzujtUsv22kP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -47,13 +51,20 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.test.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "dev",
+    "git-widget-placeholder": "feature/s3",
     "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/niviw/Desktop/matmonRemote/projects/monalist/Duplicate/src/s3",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niviw\Desktop\matmonRemote\projects\monalist\Duplicate\src\s3" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +93,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
-    <option name="LAST_COMMIT_MESSAGE" value="start" />
+    <MESSAGE value="statr, created req.txt and test.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="statr, created req.txt and test.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
