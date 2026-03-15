@@ -45,7 +45,7 @@ def upload_image(image: UploadFile, asset_id):
         #filename = str(image).split('\\')[-1]
         image_type = str(image).split('.')[-1]
         with open(image, 'rb') as data:
-            s3.Bucket(bucket_name).put_object(Key='group3/' +  'image/' + asset_id + '.' + image_type,Body=data)
+            s3.Bucket(bucket_name).put_object(Key='group3/store_first/' +  'image/' + asset_id + '.' + image_type,Body=data)
         logger.info(f'Image {asset_id} uploaded to S3 bucket {bucket_name}')
         print(f'File {image} uploaded to S3 bucket {bucket_name}')
     except Exception as e:
@@ -56,7 +56,7 @@ def upload_metadata(meta_data: dict, asset_id):
     try:
         json_metadata = json.dumps(meta_data)
         print("🦐")
-        s3.Bucket(bucket_name).put_object(Key='group3/' + 'metadata/' + asset_id + '.json' , Body=json_metadata)
+        s3.Bucket(bucket_name).put_object(Key='group3/store_first/' + 'metadata/' + asset_id + '.json' , Body=json_metadata)
         logger.info(f'Metadata uploaded to S3 bucket {bucket_name}')
         print(f'File {meta_data} uploaded to S3 bucket {bucket_name}')
     except Exception as e:
@@ -66,7 +66,7 @@ def upload_metadata(meta_data: dict, asset_id):
 def get_image_from_s3(asset_id):
     try:
         bucket = s3.Bucket(bucket_name)
-        objects = list(bucket.objects.filter(Prefix='group3/' +  'image/' + asset_id ))
+        objects = list(bucket.objects.filter(Prefix='group3/store_first/' +  'image/' + asset_id ))
         if not objects:
             logger.info(f'Object {asset_id} does not exist in bucket {bucket_name}')
             print(f'Object {asset_id} does not exist in bucket {bucket_name}')
@@ -81,7 +81,7 @@ def get_image_from_s3(asset_id):
 def get_metadata_from_s3(asset_id):
     try:
         bucket = s3.Bucket(bucket_name)
-        objects = list(bucket.objects.filter(Prefix='group3/' + asset_id + '/metadata.json'))
+        objects = list(bucket.objects.filter(Prefix='group3/store_first/' + asset_id + '/metadata.json'))
         if not objects:
             logger.info(f'Object {asset_id} does not exist in bucket {bucket_name}')
             print(f'Object {asset_id} does not exist in bucket {bucket_name}')
@@ -97,7 +97,7 @@ def get_metadata_from_s3(asset_id):
 def check_dupelication_image(image_req: s3.ObjectSummary):
     try:
         bucket = s3.Bucket(bucket_name)
-        images = list(bucket.objects.filter(Prefix='group3/' +  'image/'))
+        images = list(bucket.objects.filter(Prefix='group3/store_first/' +  'image/'))
 
         for image in images:
             s3_object = image.get()
@@ -119,7 +119,7 @@ def check_dupelication_image(image_req: s3.ObjectSummary):
 
 def check_dupelication_asset_id(metadata: dict) -> bool:
     bucket = s3.Bucket(bucket_name)
-    objects = list(bucket.objects.filter(Prefix='group3/' + metadata["asset_id"] + '/metadata.json'))
+    objects = list(bucket.objects.filter(Prefix='group3/store_first/' + metadata["asset_id"] + '/metadata.json'))
     logger.info(f'Found {len(objects)} dupelication images')
     return objects
 
