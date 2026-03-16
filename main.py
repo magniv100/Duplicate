@@ -2,7 +2,7 @@ import uvicorn
 from fastapi import FastAPI
 import logging
 
-from src.router import main_router
+from src.api.router import main_router
 
 app = FastAPI()
 

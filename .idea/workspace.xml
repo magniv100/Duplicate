@@ -8,10 +8,19 @@
       <change beforePath="$PROJECT_DIR$/.idea/Duplicate.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Duplicate.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/requests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/requests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/rabitMq/rabbit_mq_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/rabitMq/rabbit_mq_writer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/s3/s3_connect_dupe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/s3/s3_connect_dupe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/actions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rabitMq/rabbit_mq_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/writers/rabbit_mq_writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/restApi/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/router.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s3/req_nivi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s3/s3_connect_dupe.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/writers/s3_connect_dupe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s3/sample.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/s3/slime.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schema/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/schema/schema_management.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/schema_management.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +84,10 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mtmn02\Desktop\Duplicate\src\api" />
+      <recent name="C:\Users\mtmn02\Desktop\Duplicate\src\writers" />
+      <recent name="C:\Users\mtmn02\Desktop\Duplicate\src\models" />
+      <recent name="C:\Users\mtmn02\Desktop\Duplicate\src" />
       <recent name="C:\Users\origa\Documents\pro\Duplicate\src\schema" />
     </key>
   </component>
@@ -93,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773149682479</updated>
-      <workItem from="1773582329339" duration="5067000" />
+      <workItem from="1773582329339" duration="8243000" />
     </task>
     <task id="LOCAL‎-00001" summary="start">
       <option name="closed" value="true" />
@@ -168,16 +181,5 @@
     <MESSAGE value="login done" />
     <MESSAGE value="login updated and naming change" />
     <option name="LAST_COMMIT_MESSAGE" value="login updated and naming change" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
