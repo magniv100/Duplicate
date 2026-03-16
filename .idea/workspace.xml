@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="Exceptions done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/writers/rabbit_mq_writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/writers/rabbit_mq_writer.py" afterDir="false" />
-    </list>
+    <list default="true" id="1e6ee1df-7cff-46a9-a91b-1713c64d599d" name="Changes" comment="Exceptions done" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,6 +91,7 @@
       <updated>1773149682479</updated>
       <workItem from="1773582329339" duration="8271000" />
       <workItem from="1773658363470" duration="91000" />
+      <workItem from="1773658531606" duration="17000" />
     </task>
     <task id="LOCAL‎-00001" summary="start">
       <option name="closed" value="true" />

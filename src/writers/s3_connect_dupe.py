@@ -32,7 +32,7 @@ def upload_image(image: UploadFile, asset_id: str):
         if check_dupelication_asset_id(asset_id):
             if check_duplication_image(image, asset_id):
                 image_type = image.content_type
-                s3.Bucket(bucket_name).put_object(Key='group3/store_first/' +  'image/' + asset_id + '.' + image_type, Body=image.file)
+                s3.upload_fileobj(image.file, bucket_name, 'group3/store_first/' +  'image/' + asset_id + '.' + image_type)
 
         logging.log(20, f'Image {asset_id} uploaded to S3 bucket {bucket_name}')
 
