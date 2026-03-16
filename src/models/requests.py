@@ -1,4 +1,4 @@
 from pydantic import BaseModel
 
 class InsertRequest(BaseModel):
-    metadata: list[dict[str, str | int | float]]
+    metadata: dict[str, str | int | float | dict[str, str | int | float]]

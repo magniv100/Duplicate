@@ -1,16 +1,13 @@
-import base64
+
 import filecmp
 import io
 import os
-from encodings.utf_8_sig import encode
-from sys import prefix
-from tokenize import group
+
 import json
 import boto3
 from botocore.client import Config, logger
 from botocore.exceptions import ClientError
 from fastapi import UploadFile
-import logging
 access_key = ''
 secret_key = ''
 bucket_name =''
@@ -42,7 +39,6 @@ def upload_to_s3(meta_data: dict, source_path):
 
 def upload_image(image: UploadFile, asset_id):
     try:
-        #filename = str(image).split('\\')[-1]
         image_type = str(image).split('.')[-1]
         with open(image, 'rb') as data:
             s3.Bucket(bucket_name).put_object(Key='group3/store_first/' +  'image/' + asset_id + '.' + image_type,Body=data)
@@ -93,7 +89,7 @@ def get_metadata_from_s3(asset_id):
         print(f'Error getting object from S3 bucket {bucket_name}: {e}')
         return None
 
-#todo do it just iterate over all the images
+
 def check_dupelication_image(image_req: s3.ObjectSummary):
     try:
         bucket = s3.Bucket(bucket_name)
@@ -102,7 +98,6 @@ def check_dupelication_image(image_req: s3.ObjectSummary):
         for image in images:
             s3_object = image.get()
             image_req_object = image_req.get()
-            # The 'Body' is a StreamingBody object that can be read
 
             content = s3_object['Body'].read()
             image_file = io.BytesIO(content)
@@ -122,34 +117,4 @@ def check_dupelication_asset_id(metadata: dict) -> bool:
     objects = list(bucket.objects.filter(Prefix='group3/store_first/' + metadata["asset_id"] + '/metadata.json'))
     logger.info(f'Found {len(objects)} dupelication images')
     return objects
-
-
-def main():
-    meta_data: dict= {
-        "asset_id": "550e8400-e29b-41d4-a716-446655440052",
-        "asset_type": "Artistic Photograph",
-        "object_details": {
-            "title": "Urban Solitude",
-            "artist": "Elena Rossi",
-        },
-        "capture_gps": {
-            "type": "Sensor Location (Point)",
-            "latitude": 48.8640,
-            "longitude": 2.3250
-        },
-        "digital_capture":
-        {
-            "photographer": "Elena Rossi"
-        }
-    }
-    #print(get_image_from_s3('550e8400-e29b-41d4-a716-446655440000'))
-    #print(get_metadata_from_s3('550e8400-e29b-41d4-a716-446655440000'))
-    #print(get_image_from_s3('550e8400-e29b-41d4-a716-446655440000'))
-    #print(check_dupelication_image(get_image_from_s3('550e8400-e29b-41d4-a716-446655440000')))
-    #print(check_dupelication_asset_id(meta_data))
-    print(upload_to_s3(meta_data, source_path=r"C:\Users\niviw\Desktop\matmonRemote\projects\monalist\Duplicate\src\s3\slime.jpeg"))
-
-
-if __name__ == "__main__":
-    main()
 
